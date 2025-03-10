@@ -2,7 +2,8 @@
 ARGS
 ### Optional ##############################################################################
     <else>
-        cat ::*LOAD-DIR*::../juicer.info.txt
+        # cat ::*LOAD-DIR*::../juicer.info.txt
+        java -jar /root/juicer/juicer::juicer-version::.jar -h
     <main>
         mkdir -p ::out:: ;
         taffish ::*LOAD-DIR*::tools/juicer-::cmd::.taf ::*APP-ARGS*:: ::opts:: ;

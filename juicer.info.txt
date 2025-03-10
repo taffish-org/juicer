@@ -1,5 +1,7 @@
 # <juicer:2.20.00 | KaiyuanHan | 2025-03-10>
 ### Optional ##############################################################################
+    <else>
+        java -jar /root/juicer/juicer::juicer-version::.jar -h
     <main>
         mkdir -p ::out:: ;
         taffish ::*LOAD-DIR*::tools/juicer-::cmd::.taf ::*APP-ARGS*:: ::opts:: ;
