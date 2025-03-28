@@ -5,8 +5,7 @@ ARGS
         # cat ::*LOAD-DIR*::../juicer.info.txt
         java -jar /root/juicer/juicer::juicer-version::.jar -h
     <main>
-        mkdir -p ::out:: ;
-        taffish ::*LOAD-DIR*::tools/juicer-::cmd::.taf ::*APP-ARGS*:: ::opts:: ;
+        taffish ::*LOAD-DIR*::tools/juicer-::cmd::.taf ::*APP-ARGS*:: ::opts::
     <opts-default>
         out             ::*WORKDIR*::out-juicer
         pre-out-dir     ::out::/0-pre
@@ -38,6 +37,7 @@ ARGS
 RUN
     <auto-flow>
         if [ "$(echo '::*APP-ARGS*::' | cut -c 1-2)" = "--" ] ; then
+            mkdir -p ::out::
             ::*MAIN*::
         fi
     <::run-set::>
