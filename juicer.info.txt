@@ -1,4 +1,8 @@
-# <juicer:2.20.00 | KaiyuanHan | 2025-03-10>
+# <juicer:2.20.00 | KaiyuanHan | 2025-04-29>
+Usage:
+  taf-juicer -
+
+
 ### Optional ##############################################################################
     <else>
         java -jar /root/juicer/juicer::juicer-version::.jar -h
